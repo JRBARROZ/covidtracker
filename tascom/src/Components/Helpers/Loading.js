@@ -7,7 +7,7 @@ function Loading() {
                 <div className="flex items-center justify-center w-36 h-36 bg-transparent border-left border-2 border-solid border-subtitleGreen rounded-full animate-spin">
                     <Virus/>
                 </div>
-                <p className="title text-xl mt-10 tracking-widest font-normal">Loading...</p>
+                <p className="title text-xl mt-10 tracking-widest font-normal uppercase">Carregando...</p>
             </div>
         </div>
     )

@@ -23,13 +23,13 @@
         @apply flex gap-2 flex-col mx-4
     }
     .title, title-medium{
-        @apply font-montserrat text-4xl text-titleGray font-bold;
+        @apply font-montserrat text-4xl text-titleGray font-bold uppercase;
     }
     .title-medium {
         @apply text-xs font-medium
     }
     .subtitle{
-        @apply font-montserrat text-sm tracking-widest text-subtitleGreen;
+        @apply font-montserrat text-sm tracking-widest text-subtitleGreen uppercase;
 
     }
     .global-item{

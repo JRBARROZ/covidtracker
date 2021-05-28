@@ -1,27 +1,29 @@
 import React from 'react'
+import useFormatDate from '../Hooks/useFormatDate'
 
-function Global() {
+function Global({globalData}) {
+    const {formatedDate} = useFormatDate(globalData.Date)
     return (
         <section className="flex flex-wrap w-full mt-5 border border-solid border-subtitleGreen rounded-lg border-opacity-50">
             <div className="global-item">
                 <p className=" mb-4 title-medium font-montserrat">
                     UPDATED : 
-                    <span className="text-subtitleGreen"> 27/02 - 16:27</span>
+                    <span className="text-subtitleGreen"> {formatedDate}</span>
                 </p>
-                <h1 className="title text-2xl">168.040.850</h1>
+                <h1 className="title text-2xl">{globalData.TotalConfirmed}</h1>
                 <p className="subtitle mt-2 font-medium">CONFIRMED CASES</p>
-                <h1 className="title text-2xl mt-7" >168.040.850</h1>
+                <h1 className="title text-2xl mt-7" >{globalData.TotalDeaths}</h1>
                 <p className="subtitle mt-2 font-medium">CASES OF DEATH</p>
             </div>
             <div className="global-item lg:mx-0 flex flex-col gap-2">
-                <h1 className="title text-xl font-medium">5743</h1>
+                <h1 className="title text-xl font-medium">{globalData.NewDeaths}</h1>
                 <p className="subtitle title-medium">NEW DEATHS</p>
-                <h1 className="title text-xl font-medium">5743</h1>
-                <p className="subtitle title-medium">NEW CONFIRMEDS</p>
-                <h1 className="title text-xl font-medium">5743</h1>
-                <p className="subtitle title-medium">NEW RECOVEREDS</p>
-                <h1 className="title text-xl font-medium">5743</h1>
-                <p className="subtitle title-medium">TOTAL RECOVEREDS</p>
+                <h1 className="title text-xl font-medium">{globalData.NewConfirmed}</h1>
+                <p className="subtitle title-medium">NEW CONFIRMED</p>
+                <h1 className="title text-xl font-medium">{globalData.NewRecovered}</h1>
+                <p className="subtitle title-medium">NEW RECOVERED</p>
+                <h1 className="title text-xl font-medium">{globalData.TotalRecovered}</h1>
+                <p className="subtitle title-medium">TOTAL RECOVERED</p>
             </div>
         </section>
     )

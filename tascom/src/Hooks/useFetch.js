@@ -14,11 +14,11 @@ const useFetch = () => {
       json = await response.json();
       if (response.ok === false) throw new Error("Error to get Summary, Try again later.");
     } catch (error) {
-      json = null;
-      setError(error.message);
+        json = null;
+        setError(error.message);
     } finally {
-      setData(json);
-      setLoading(false);
+        setData(json);
+        setLoading(false);
       return { response, json };
     }
   }, []);

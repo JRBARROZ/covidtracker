@@ -30,9 +30,9 @@ function App() {
               <p className="subtitle">#USEMASKS</p>
               <h1 className="title">SITUATION BY COUNTRY</h1>
               <section className="flex flex-wrap w-full mt-5 gap-4 justify-center md:justify-start ">
-              { data.Countries && data.Countries.slice(23, 29).map((country)=>(
+                { data.Countries && data.Countries.slice(23, 29).map((country)=>(
                   <Country key={country.Slug} {...country} />
-              ))}
+                ))}
               </section>
             </section>
           </main>

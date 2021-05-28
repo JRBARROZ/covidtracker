@@ -1,9 +1,13 @@
 import React from "react";
 import useFormatDate from "../Hooks/useFormatDate";
-
+import {VictoryPie} from 'victory';
 function Global({ globalData }) {
   const { formatedDate } = useFormatDate(globalData.Date);
-
+  const graph = [
+    {x : "CONFIRMED", y: globalData.TotalConfirmed},
+    {x : "DEATHS", y: globalData.TotalDeaths},
+    {x : "RECOVERED", y: globalData.TotalRecovered},
+  ]
   return (
     <section className="flex flex-wrap w-full mt-5 border border-solid border-subtitleGreen rounded-lg border-opacity-50">
       <div className="global-item">
@@ -36,6 +40,14 @@ function Global({ globalData }) {
           {globalData.TotalRecovered}
         </h1>
         <p className="subtitle title-medium">TOTAL RECOVERED</p>
+      </div>
+      <div className="border-0 mx-auto">
+        <VictoryPie 
+          innerRadius={50} 
+          colorScale={["#34D399", "#6EE7B7", "#A7F3D0"]}
+          data={graph} height={300} 
+          style={{labels: {fontFamily:"Montserrat", fontSize: 13, fontWeight: 500}}} 
+        />
       </div>
     </section>
   );

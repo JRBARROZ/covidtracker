@@ -1,5 +1,5 @@
 import React from "react";
-
+//i don't use axios couse is desnecessary in this case.
 const useFetch = () => {
   const [data, setData] = React.useState(null);
   const [error, setError] = React.useState(null);

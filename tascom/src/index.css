@@ -14,7 +14,11 @@
     border-style: none;
     border-color: none;
 }
+.border-left{
+    border-left-color:  rgba(83, 200, 164, 0.3);
+}
 @layer base {
+
     .data-section{
         @apply flex gap-2 flex-col mx-4
     }
@@ -29,7 +33,7 @@
 
     }
     .global-item{
-        @apply mx-auto my-6 sm:mx-7 md:my-12 lg:border-r lg:border-solid pr-10 border-subtitleGreen border-opacity-50
+        @apply mx-auto my-6 sm:mx-7 md:my-12 lg:border-r lg:border-solid md:pr-10 border-subtitleGreen border-opacity-50
     }
 }
   

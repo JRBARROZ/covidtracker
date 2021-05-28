@@ -16,6 +16,20 @@ module.exports = {
         subtitleGreen:{
           DEFAULT:"#53C8A4"
         }
+      },
+      keyframes : {
+        slideLeft : {
+          'from':{opacity: 0,transform: 'translateX(-30px)' },
+          'to': {opacity: 1, transform: 'translateX(0px)'}
+        },
+        emerge:{
+          'from':{opacity: 0},
+          'to': {opacity: 1}
+        }
+      },
+      animation:{
+        slideLeft: 'slideLeft .3s forwards ease',
+        emerge: 'emerge .3s forwards ease',
       }
     },
   },

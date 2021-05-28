@@ -1,39 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-*, ::before, ::after {
-    box-sizing: initial;
-    border-width: 0;
-    border-style: none;
-    border-color: none;
+*,
+::before,
+::after {
+  box-sizing: initial;
+  border-width: 0;
+  border-style: none;
+  border-color: none;
 }
-.border-left{
-    border-left-color:  rgba(83, 200, 164, 0.3);
+.border-left {
+  border-left-color: rgba(83, 200, 164, 0.3);
 }
 @layer base {
-
-    .data-section{
-        @apply flex gap-2 flex-col mx-4
-    }
-    .title, title-medium{
-        @apply font-montserrat text-4xl text-titleGray font-bold uppercase;
-    }
-    .title-medium {
-        @apply text-xs font-medium
-    }
-    .subtitle{
-        @apply font-montserrat text-sm tracking-widest text-subtitleGreen uppercase;
-
-    }
-    .global-item{
-        @apply mx-auto my-6 sm:mx-7 md:my-12 lg:border-r lg:border-solid md:pr-10 border-subtitleGreen border-opacity-50
-    }
+  .data-section {
+    @apply flex gap-2 flex-col mx-4;
+  }
+  .title,
+  title-medium {
+    @apply font-montserrat text-4xl text-titleGray font-bold uppercase;
+  }
+  .title-medium {
+    @apply text-xs font-medium;
+  }
+  .subtitle {
+    @apply font-montserrat text-sm tracking-widest text-subtitleGreen uppercase;
+  }
+  .global-item {
+    @apply mx-auto my-6 sm:mx-7 md:my-12 lg:border-r lg:border-solid md:pr-10 border-subtitleGreen border-opacity-50;
+  }
 }
-  

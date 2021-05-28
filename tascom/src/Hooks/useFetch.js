@@ -12,8 +12,7 @@ const useFetch = () => {
       setLoading(true);
       response = await fetch(url, options);
       json = await response.json();
-      if (response.ok === false)
-        throw new Error("Error to get Summary, Try again later.");
+      if (response.ok === false) throw new Error("Error to get Summary, Try again later.");
     } catch (error) {
       json = null;
       setError(error.message);

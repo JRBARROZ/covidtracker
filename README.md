@@ -10,7 +10,7 @@ Com tudo aparentando funcionar corretamente gerei a build e realizei o deploy no
 
 ## COMEÇANDO
 
-Caso você não deseje instalar e visualizar a aplicação em produção :
+Caso você não deseje instalar e almeja apenas visualizar a aplicação em produção :
 
 🔗 https://covidsummary.netlify.app/ 
 

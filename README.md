@@ -1,4 +1,4 @@
-#  Tascom - Informações Sobre o Covid ⚕️
+#  Covid Tracker - Informações Sobre o Covid ⚕️
 De primeiro queria agradecer pela oportunidade e o desafio que foi muito divertido, segundo vou explicar resumidamente minha linha de raciocínio.
 Logo quando recebi o desafio, precisei fazer um briefing das informações, sai pesquisando tudo relacionado sobre Covid e interfaces que mostram informações sobre o vírus. Com base nisso, fiz rabiscos e desenhos de possíveis telas e de onde ficariam localizados os dados propostos pela a API. 
 

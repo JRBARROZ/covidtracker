@@ -8,7 +8,7 @@ function Header() {
           <span className="text-white">#</span>FIQUE
           <span className="text-white">EM</span>CASA
         </p>
-        <h1 className="font-montserrat font-bold italic text-4xl">TASCOM</h1>
+        <h1 className="font-montserrat font-bold italic text-4xl">JRBARROZ</h1>
         <p className="font-montserrat text-2xl md:text-3xl">
           COVID <span className="text-subtitleGreen">RESUMO</span>
         </p>
